@@ -1,0 +1,35 @@
+# Archivos de estado de Terraform
+.terraform/*
+terraform.tfstate
+terraform.tfstate.backup
+
+# Archivos de caché y temporales de Terraform
+.terraform.lock.hcl
+.terraformrc
+terraform-provider-*
+.cache
+
+# Archivos sensibles
+*.pem # ¡MUY IMPORTANTE! No commitear tus claves privadas
+/Datos.pem  # Especifica el nombre exacto de tu clave privada
+
+# Archivos locales y de entorno
+.env
+.DS_Store # Archivos de macOS
+Thumbs.db # Archivos de Windows
+*.swp   # Archivos de swap de Vim
+*.swo   # Archivos de swap de Vim
+.idea/  # Directorio de IntelliJ IDEA
+.vscode/ # Directorio de VS Code
+
+# Archivos de logs (si los generas localmente)
+*.log
+
+# Dependencias (si las manejas localmente)
+/vendor/
+/node_modules/
+/venv/
+/env/
+
+# Archivos de salida (si los generas localmente)
+/output*

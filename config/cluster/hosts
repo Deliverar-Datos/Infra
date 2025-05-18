@@ -1,0 +1,35 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost6 localhost6.localdomain6
+# Nodos del Cluster Hadoop
+
+10.0.1.254 masternode master
+10.0.1.100 datanode01 esclavo01
+10.0.1.101 datanode02 esclavo02
+10.0.1.102 datanode03 esclavo03
+10.0.1.103 datanode04 esclavo04
+10.0.1.104 datanode05 esclavo05
+10.0.1.105 datanode06 esclavo06
+10.0.1.106 datanode07 esclavo07
+10.0.1.107 datanode08 esclavo08
+10.0.1.108 datanode09 esclavo09
+10.0.1.109 datanode10 esclavo10
+10.0.1.110 datanode11 esclavo11
+10.0.1.111 datanode12 esclavo12
+10.0.1.112 datanode13 esclavo13
+10.0.1.113 datanode14 esclavo14
+10.0.1.114 datanode15 esclavo15
+10.0.1.115 datanode16 esclavo16
+10.0.1.116 datanode17 esclavo17
+10.0.1.117 datanode18 esclavo18
+10.0.1.118 datanode19 esclavo19
+10.0.1.119 datanode20 esclavo20
+10.0.1.120 datanode21 esclavo21
+10.0.1.121 datanode22 esclavo22
+10.0.1.122 datanode23 esclavo23
+10.0.1.123 datanode24 esclavo24
+10.0.1.124 datanode25 esclavo25
+10.0.1.125 datanode26 esclavo26
+10.0.1.126 datanode27 esclavo27
+10.0.1.127 datanode28 esclavo28
+10.0.1.128 datanode29 esclavo29
+10.0.1.129 datanode30 esclavo30

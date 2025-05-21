@@ -15,7 +15,7 @@ resource "aws_vpc" "react_vpc" {
 resource "aws_subnet" "react_subnet" {
   vpc_id                  = aws_vpc.react_vpc.id
   cidr_block              = "10.0.1.0/24"
-  map_public_ip_on_launch = true
+  map_public_ip_on_launch = false
   availability_zone       = "us-east-1a"
 
   tags = {
@@ -65,7 +65,7 @@ resource "aws_security_group" "react_sg" {
   }
 
   ingress {
-    from_port   = 3000
+    from_port   = 80
     to_port     = 3000
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
@@ -85,7 +85,7 @@ resource "aws_instance" "react_instance" {
   instance_type          = "t2.large"
   subnet_id              = aws_subnet.react_subnet.id
   vpc_security_group_ids = [aws_security_group.react_sg.id]
-  key_name               = "Datos"  # Debés tener esta key en AWS EC2
+  key_name               = "WEB"  # Debés tener esta key en AWS EC2
 
   associate_public_ip_address = true
 
@@ -96,7 +96,27 @@ resource "aws_instance" "react_instance" {
   user_data = file("init_front.sh") # Asumiendo que tienes un script para inicializar PostgreSQL
 }
 
-# 7. Output: IP pública
-output "ip_publica" {
-  value = aws_instance.react_instance.public_ip
+# # 7. Output: IP pública
+# output "ip_publica" {
+#   value = aws_instance.react_instance.public_ip
+# }
+
+
+# Recurso para la IP Elástica
+resource "aws_eip" "mi_ip_elastica_vpc" {
+  # vpc      = true # Muy importante: asigna la EIP al ámbito de la VPC
+
+  # Opcional: Asocia la EIP a la instancia EC2 creada anteriormente
+  instance = aws_instance.react_instance.id
+
+  tags = {
+    Name        = "MiIPElasticaPublica"
+    Environment = "Development"
+  }
+}
+
+# (Opcional) Salida para ver la IP pública asignada
+output "elastic_ip_address" {
+  description = "La dirección IP elástica asignada."
+  value       = aws_eip.mi_ip_elastica_vpc.public_ip
 }

@@ -2,21 +2,23 @@ provider "aws" {
   region = "us-east-1"  # Cambiá si estás en otra región
 }
 
-# 1. Crear la VPC
-resource "aws_vpc" "hadoop_vpc" {
-  cidr_block           = "10.0.0.0/16"
-  enable_dns_support   = false
-  enable_dns_hostnames = false
+# # 1. Crear la VPC
+# resource "aws_vpc" "hadoop_vpc" {
+#   cidr_block           = "10.0.0.0/16"
+#   enable_dns_support   = false
+#   enable_dns_hostnames = false
 
-  tags = {
-    Name = "Hadoop-VPC"
-  }
-}
+#   tags = {
+#     Name = "Hadoop-VPC"
+#   }
+# }
+
+
 
 # 2. Crear una Subnet /24
 resource "aws_subnet" "hadoop_subnet" {
-  vpc_id                  = aws_vpc.hadoop_vpc.id
-  cidr_block              = "10.0.1.0/24"
+  vpc_id                  = aws_vpc.lan-vpc.id  
+  cidr_block              = "10.0.10.0/24"
   map_public_ip_on_launch = false
   availability_zone       = "us-east-1a" # O cambialo según tu zona
 
@@ -27,7 +29,7 @@ resource "aws_subnet" "hadoop_subnet" {
 
 # 3. Crear una Internet Gateway
 resource "aws_internet_gateway" "hadoop_igw" {
-  vpc_id = aws_vpc.hadoop_vpc.id
+  vpc_id = aws_vpc.lan-vpc.id  
 
   tags = {
     Name = "Hadoop-IGW"
@@ -36,7 +38,7 @@ resource "aws_internet_gateway" "hadoop_igw" {
 
 # 4. Crear una tabla de ruteo para salida a internet
 resource "aws_route_table" "hadoop_route_table" {
-  vpc_id = aws_vpc.hadoop_vpc.id
+  vpc_id = aws_vpc.lan-vpc.id  
 
   route {
     cidr_block = "0.0.0.0/0"
@@ -58,7 +60,7 @@ resource "aws_route_table_association" "hadoop_rta" {
 resource "aws_security_group" "hadoop_sg" {
   name        = "Hadoop-Nodes-SG"
   description = "Permitirssh"
-  vpc_id      = aws_vpc.hadoop_vpc.id
+  vpc_id      = aws_vpc.lan-vpc.id  
 
   ingress {
     description = "SSH desde tu IP"
@@ -100,7 +102,7 @@ resource "aws_instance" "hadoop_master" {
   associate_public_ip_address = true
   key_name                    = "hadoop" # ⚠️ Cambiar por tu key pair existente
   private_ip                  = "10.0.1.254"
-  user_data = file("init_airflow.sh") # Asumiendo que tienes un script para inicializar PostgreSQL
+  user_data = file("scripts/init_hadoop.sh") # Asumiendo que tienes un script para inicializar PostgreSQL
 
   
 }

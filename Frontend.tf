@@ -1,14 +1,8 @@
 
-# deploy/main.tf
-module "vpc" {
-  source = "./modulos"
-}
-
-
 
 # 2. Subnet pública
 resource "aws_subnet" "react_subnet" {
-  vpc_id                  =  module.vpc.vpc_id
+  vpc_id                  =  aws_vpc.lan-vpc.id 
   cidr_block              = "10.0.1.0/24"
   map_public_ip_on_launch = false
   availability_zone       = "us-east-1a"
@@ -20,7 +14,7 @@ resource "aws_subnet" "react_subnet" {
 
 
 resource "aws_internet_gateway" "react_igw" {
-  vpc_id =  module.vpc.vpc_id
+  vpc_id =  aws_vpc.lan-vpc.id  
 
   tags = {
     Name = "react-igw"
@@ -29,7 +23,7 @@ resource "aws_internet_gateway" "react_igw" {
 
 
 resource "aws_route_table" "react_rt" {
-  vpc_id =  module.vpc.vpc_id
+  vpc_id =  aws_vpc.lan-vpc.id  
 
   route {
     cidr_block = "0.0.0.0/0"
@@ -50,7 +44,7 @@ resource "aws_route_table_association" "react_rt_assoc" {
 resource "aws_security_group" "react_sg" {
   name        = "react-sg"
   description = "Permitir SSH y puerto 3000"
-  vpc_id      = module.vpc.vpc_id
+  vpc_id      = aws_vpc.lan-vpc.id  
 
   ingress {
     from_port   = 22
@@ -83,7 +77,7 @@ resource "aws_instance" "react_instance" {
   key_name               = "WEB"  # Debés tener esta key en AWS EC2
 
   associate_public_ip_address = true
-  user_data = file("init_front.sh") 
+  user_data = file("scripts/init_front.sh") 
 
   tags = {
     Name = "react-node"

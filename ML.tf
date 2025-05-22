@@ -1,34 +1,20 @@
 
 
-# # VPC principal para backend EC2
-# resource "aws_vpc" "main" {
-#   cidr_block           = "10.0.0.0/16"
-#   enable_dns_support   = true
-#   enable_dns_hostnames = true
-
-#   tags = {
-#     Name = "hadoop-vpc"
-#   }
-# }
-# deploy/main.tf
-module "vpc" {
-  source = "../modulos"
-}
 
 
 resource "aws_subnet" "main" {
-  vpc_id                  = module.vpc.vpc_id
+  vpc_id                  = aws_vpc.lan-vpc.id  
   cidr_block              = "10.0.3.0/24"
   availability_zone       = "us-east-1c"
   map_public_ip_on_launch = true
 }
 
 resource "aws_internet_gateway" "gw" {
-  vpc_id = module.vpc.vpc_id
+  vpc_id = aws_vpc.lan-vpc.id  
 }
 
 resource "aws_route_table" "rt" {
-  vpc_id = module.vpc.vpc_id
+  vpc_id = aws_vpc.lan-vpc.id  
 
   route {
     cidr_block = "0.0.0.0/0"
@@ -44,7 +30,7 @@ resource "aws_route_table_association" "a" {
 resource "aws_security_group" "backend_sg" {
   name        = "backend-sg"
   description = "Allow SSH and Git access"
-  vpc_id      = module.vpc.vpc_id
+  vpc_id      = aws_vpc.lan-vpc.id  
 
   ingress {
     from_port   = 22
@@ -72,9 +58,7 @@ resource "aws_instance" "backend" {
   subnet_id                   = aws_subnet.main.id
   vpc_security_group_ids      = [aws_security_group.backend_sg.id]
   associate_public_ip_address = true
-
-
-  user_data = file("scripts/init.sh")
+  user_data = file("scripts/init_ML.sh")
 
   tags = {
     Name = "backend-ec2"

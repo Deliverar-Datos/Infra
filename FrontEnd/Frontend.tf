@@ -1,19 +1,14 @@
 
-
-# 1. VPC
-resource "aws_vpc" "react_vpc" {
-  cidr_block           = "10.0.0.0/16"
-  enable_dns_support   = true
-  enable_dns_hostnames = true
-
-  tags = {
-    Name = "react-vpc"
-  }
+# deploy/main.tf
+module "vpc" {
+  source = "./modulos"
 }
+
+
 
 # 2. Subnet pública
 resource "aws_subnet" "react_subnet" {
-  vpc_id                  = aws_vpc.react_vpc.id
+  vpc_id                  =  module.vpc.vpc_id
   cidr_block              = "10.0.1.0/24"
   map_public_ip_on_launch = false
   availability_zone       = "us-east-1a"
@@ -23,18 +18,18 @@ resource "aws_subnet" "react_subnet" {
   }
 }
 
-# 3. Internet Gateway
+
 resource "aws_internet_gateway" "react_igw" {
-  vpc_id = aws_vpc.react_vpc.id
+  vpc_id =  module.vpc.vpc_id
 
   tags = {
     Name = "react-igw"
   }
 }
 
-# 4. Tabla de rutas
+
 resource "aws_route_table" "react_rt" {
-  vpc_id = aws_vpc.react_vpc.id
+  vpc_id =  module.vpc.vpc_id
 
   route {
     cidr_block = "0.0.0.0/0"
@@ -44,7 +39,7 @@ resource "aws_route_table" "react_rt" {
   tags = {
     Name = "react-rt"
   }
-}
+ }
 
 resource "aws_route_table_association" "react_rt_assoc" {
   subnet_id      = aws_subnet.react_subnet.id
@@ -55,7 +50,7 @@ resource "aws_route_table_association" "react_rt_assoc" {
 resource "aws_security_group" "react_sg" {
   name        = "react-sg"
   description = "Permitir SSH y puerto 3000"
-  vpc_id      = aws_vpc.react_vpc.id
+  vpc_id      = module.vpc.vpc_id
 
   ingress {
     from_port   = 22
@@ -82,25 +77,24 @@ resource "aws_security_group" "react_sg" {
 # 6. EC2 Instance
 resource "aws_instance" "react_instance" {
   ami                    = "ami-0440d3b780d96b29d" # Amazon Linux 2023 - us-east-1
-  instance_type          = "t2.large"
+  instance_type          = "t3.large"
   subnet_id              = aws_subnet.react_subnet.id
   vpc_security_group_ids = [aws_security_group.react_sg.id]
   key_name               = "WEB"  # Debés tener esta key en AWS EC2
 
   associate_public_ip_address = true
+  user_data = file("init_front.sh") 
 
   tags = {
     Name = "react-node"
   }
 
-  user_data = file("init_front.sh") # Asumiendo que tienes un script para inicializar PostgreSQL
 }
 
 # # 7. Output: IP pública
 # output "ip_publica" {
 #   value = aws_instance.react_instance.public_ip
 # }
-
 
 # Recurso para la IP Elástica
 resource "aws_eip" "mi_ip_elastica_vpc" {
@@ -120,3 +114,5 @@ output "elastic_ip_address" {
   description = "La dirección IP elástica asignada."
   value       = aws_eip.mi_ip_elastica_vpc.public_ip
 }
+
+

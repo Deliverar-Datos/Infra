@@ -1,0 +1,201 @@
+producto_id,catalogo_id,nombre_producto,descripcion,precio,cantidad_stock,categoria,disponible,fecha_creacion,fecha_actualizacion
+101,1,Pizza Muzzarella,Clásica pizza con muzzarella y salsa de tomate,2032.62,13,Comida Italiana,True,2025-05-13 02:54:04,2025-05-15 12:11:06
+102,1,Officiis enim,Ex iusto fugit id inventore dolore quo.,2803.33,47,Comida Italiana,True,2025-05-12 02:54:04,2025-05-15 12:11:06
+103,1,Numquam laboriosam,Sed iusto eum magni ipsam pariatur cum.,2740.58,5,Comida Italiana,True,2025-05-10 02:54:04,2025-05-15 12:11:06
+104,1,Eveniet exercitationem,Illum blanditiis dolorum soluta eveniet reprehenderit consequuntur.,3698.16,23,Comida Italiana,True,2025-05-11 02:54:04,2025-05-15 12:11:06
+105,1,Mollitia qui,Nulla officia tenetur sint repellendus reiciendis.,2074.83,37,Comida Italiana,True,2025-05-09 02:54:04,2025-05-15 12:11:06
+106,1,Officia vel,Vitae veniam odit aliquam quos.,4259.31,40,Comida Italiana,True,2025-05-10 02:54:04,2025-05-15 12:11:06
+107,1,Ipsam molestias,Mollitia aut rerum nulla nesciunt.,1206.94,21,Comida Italiana,True,2025-05-11 02:54:04,2025-05-15 12:11:06
+108,1,Doloremque architecto,Nihil vero nisi molestias.,4860.8,20,Comida Italiana,True,2025-05-14 02:54:04,2025-05-15 12:11:06
+109,1,Pizza Napolitana,"Pizza con muzzarella, tomate y albahaca",1454.3,8,Comida Italiana,True,2025-05-12 02:54:04,2025-05-15 12:11:06
+110,1,Lasagna,"Capas de pasta, carne y salsa bechamel",1227.79,38,Comida Italiana,True,2025-05-10 02:54:04,2025-05-15 12:11:06
+201,2,Nihil sequi,Nisi neque ducimus natus modi nihil.,4394.81,50,Comida Mexicana,True,2024-07-03 06:12:37,2025-01-07 10:58:27
+202,2,Distinctio quas,Deserunt facere quam eos ipsa odit.,4921.05,4,Comida Mexicana,True,2024-06-30 06:12:37,2025-01-07 10:58:27
+203,2,Nachos,"Totopos con queso, guacamole y salsa",3572.78,6,Comida Mexicana,True,2024-06-30 06:12:37,2025-01-07 10:58:27
+204,2,Enchiladas,Tortillas rellenas bañadas en salsa picante,2910.38,30,Comida Mexicana,True,2024-07-03 06:12:37,2025-01-07 10:58:27
+205,2,Molestiae earum,Quod dignissimos aspernatur sint at magni et.,3650.06,8,Comida Mexicana,True,2024-07-02 06:12:37,2025-01-07 10:58:27
+206,2,Porro ut,Veniam neque omnis dignissimos.,2809.44,9,Comida Mexicana,True,2024-06-30 06:12:37,2025-01-07 10:58:27
+207,2,Quesadillas,Tortilla con queso derretido y guarniciones,3550.96,12,Comida Mexicana,False,2024-07-01 06:12:37,2025-01-07 10:58:27
+208,2,Molestiae aliquam,Quas at neque dolor.,4694.22,9,Comida Mexicana,True,2024-06-30 06:12:37,2025-01-07 10:58:27
+209,2,Burrito,"Tortilla rellena de carne, frijoles y arroz",1354.11,24,Comida Mexicana,True,2024-07-04 06:12:37,2025-01-07 10:58:27
+210,2,Tacos,Trio de tacos de carne con salsa,4197.09,16,Comida Mexicana,False,2024-07-01 06:12:37,2025-01-07 10:58:27
+301,3,Empanadas de carne,Empanadas fritas rellenas de carne picante,1008.07,3,Comida Argentina,True,2025-05-11 20:58:52,2025-05-17 12:03:15
+302,3,Asperiores tempore,Laboriosam modi aut necessitatibus magni vitae.,4094.34,24,Comida Argentina,True,2025-05-12 20:58:52,2025-05-17 12:03:15
+303,3,Milanesa con papas,Milanesa de carne con papas fritas,1518.77,30,Comida Argentina,True,2025-05-12 20:58:52,2025-05-17 12:03:15
+304,3,Eaque ut,Exercitationem vero culpa reprehenderit quod impedit nesciunt.,1174.91,38,Comida Argentina,False,2025-05-09 20:58:52,2025-05-17 12:03:15
+305,3,Locro,Tradicional guiso argentino,2879.27,2,Comida Argentina,True,2025-05-14 20:58:52,2025-05-17 12:03:15
+306,3,Voluptate accusantium,Omnis soluta perspiciatis adipisci sit fugit facere.,4809.36,38,Comida Argentina,True,2025-05-15 20:58:52,2025-05-17 12:03:15
+307,3,Molestias adipisci,Quas esse ab deleniti.,3219.69,47,Comida Argentina,False,2025-05-14 20:58:52,2025-05-17 12:03:15
+308,3,Maiores pariatur,Quaerat exercitationem expedita assumenda ipsam voluptatum quia quia.,3191.58,23,Comida Argentina,True,2025-05-12 20:58:52,2025-05-17 12:03:15
+309,3,Mollitia placeat,Ullam tenetur optio commodi laudantium dolor.,2296.15,43,Comida Argentina,True,2025-05-10 20:58:52,2025-05-17 12:03:15
+310,3,Empanadas de pollo,Empanadas horneadas rellenas de pollo,3120.17,4,Comida Argentina,True,2025-05-14 20:58:52,2025-05-17 12:03:15
+401,4,Samosas,Empanadillas de vegetales con especias,3356.73,24,Comida India,True,2024-09-26 06:08:12,2025-04-02 18:31:39
+402,4,Naan,Pan tradicional indio,4440.97,4,Comida India,True,2024-09-28 06:08:12,2025-04-02 18:31:39
+403,4,Arroz con vegetales,Arroz con mezcla de vegetales y especias,4389.21,12,Comida India,True,2024-09-27 06:08:12,2025-04-02 18:31:39
+404,4,Illo possimus,Dolore et ipsa aliquam.,1430.34,37,Comida India,True,2024-09-24 06:08:12,2025-04-02 18:31:39
+405,4,Facilis possimus,Possimus illum fugiat voluptatum harum possimus voluptate.,3733.38,48,Comida India,False,2024-09-27 06:08:12,2025-04-02 18:31:39
+406,4,Eaque iste,Quas cumque ea.,4084.06,45,Comida India,True,2024-09-23 06:08:12,2025-04-02 18:31:39
+407,4,Explicabo quam,Quae alias ipsum quasi quas facere.,3410.16,9,Comida India,True,2024-09-27 06:08:12,2025-04-02 18:31:39
+408,4,Pollo al curry,Pollo en salsa curry con arroz basmati,3344.81,39,Comida India,True,2024-09-24 06:08:12,2025-04-02 18:31:39
+409,4,Tikka Masala,Pollo en salsa cremosa de tomate,2480.97,31,Comida India,True,2024-09-24 06:08:12,2025-04-02 18:31:39
+410,4,A libero,Molestiae doloremque facere eveniet quidem.,3634.12,47,Comida India,True,2024-09-24 06:08:12,2025-04-02 18:31:39
+501,5,Voluptatem maxime,Quaerat exercitationem soluta.,3043.32,19,Comida Callejera,True,2024-07-26 12:30:47,2025-02-07 03:05:13
+502,5,Adipisci ipsam,Harum repellendus laudantium incidunt veniam quia.,5078.85,17,Comida Callejera,True,2024-07-25 12:30:47,2025-02-07 03:05:13
+503,5,Choripán,Sandwich de chorizo con chimichurri,4197.81,41,Comida Callejera,True,2024-07-28 12:30:47,2025-02-07 03:05:13
+504,5,Lomito completo,"Sandwich de lomo con jamón, queso y huevo",2958.12,42,Comida Callejera,True,2024-07-25 12:30:47,2025-02-07 03:05:13
+505,5,Minus suscipit,Tempora possimus occaecati voluptate.,3920.32,32,Comida Callejera,True,2024-07-26 12:30:47,2025-02-07 03:05:13
+506,5,Sandwich de milanesa,Milanesa en pan francés con lechuga y tomate,1320.62,44,Comida Callejera,True,2024-07-27 12:30:47,2025-02-07 03:05:13
+507,5,Placeat veritatis,Beatae quo vero labore architecto laborum voluptatibus.,4238.21,16,Comida Callejera,True,2024-07-23 12:30:47,2025-02-07 03:05:13
+508,5,Pancho completo,Pancho con todos los aderezos,4453.14,25,Comida Callejera,True,2024-07-25 12:30:47,2025-02-07 03:05:13
+509,5,Velit quis,Officia placeat voluptate ipsa distinctio atque ad nisi.,1930.11,6,Comida Callejera,True,2024-07-28 12:30:47,2025-02-07 03:05:13
+510,5,Voluptas modi,A tempora voluptate quasi quod voluptatibus.,3746.72,28,Comida Callejera,True,2024-07-26 12:30:47,2025-02-07 03:05:13
+601,6,Hamburguesa doble,"Doble carne con queso, lechuga y tomate",3024.91,31,Comida Rápida,True,2025-03-28 22:59:46,2025-05-15 04:56:13
+602,6,Papas fritas,Porción grande de papas fritas crujientes,2419.05,21,Comida Rápida,True,2025-04-02 22:59:46,2025-05-15 04:56:13
+603,6,Hot Dog,Pancho completo con aderezos,4150.51,41,Comida Rápida,True,2025-03-28 22:59:46,2025-05-15 04:56:13
+604,6,Nuggets de pollo,6 piezas de nuggets con salsa,4326.67,25,Comida Rápida,True,2025-03-29 22:59:46,2025-05-15 04:56:13
+605,6,Ensalada César,"Ensalada con pollo, croutons y aderezo césar",3363.29,16,Comida Rápida,True,2025-03-30 22:59:46,2025-05-15 04:56:13
+606,6,Expedita quos,Labore provident voluptates nam dicta accusamus incidunt blanditiis.,1213.74,49,Comida Rápida,True,2025-04-03 22:59:46,2025-05-15 04:56:13
+607,6,Dolor itaque,Magnam excepturi temporibus architecto occaecati omnis laudantium.,1236.91,29,Comida Rápida,True,2025-04-01 22:59:46,2025-05-15 04:56:13
+608,6,Temporibus ut,Tenetur eaque perspiciatis ipsa possimus officiis magnam.,3110.68,6,Comida Rápida,True,2025-03-31 22:59:46,2025-05-15 04:56:13
+609,6,Et maiores,Dolores eum officia.,2246.95,9,Comida Rápida,True,2025-03-29 22:59:46,2025-05-15 04:56:13
+610,6,Quis error,Molestiae dolor eius labore quisquam inventore.,2711.29,2,Comida Rápida,True,2025-04-03 22:59:46,2025-05-15 04:56:13
+701,7,Ipsa praesentium,Facere cumque odio explicabo.,3524.28,13,Comida Saludable,True,2024-05-27 23:31:51,2025-04-29 21:26:24
+702,7,Smoothie verde,"Batido de espinaca, banana y manzana",1963.01,42,Comida Saludable,True,2024-05-28 23:31:51,2025-04-29 21:26:24
+703,7,Saepe voluptate,Magnam rerum sit accusamus fugit.,4240.62,15,Comida Saludable,True,2024-05-23 23:31:51,2025-04-29 21:26:24
+704,7,Bowl de quinoa,Quinoa con vegetales asados y aderezo,4554.36,16,Comida Saludable,True,2024-05-24 23:31:51,2025-04-29 21:26:24
+705,7,Ensalada de salmón,Salmón ahumado con vegetales frescos,2538.98,19,Comida Saludable,True,2024-05-25 23:31:51,2025-04-29 21:26:24
+706,7,Wrap vegetariano,Wrap con vegetales frescos y hummus,4247.5,19,Comida Saludable,True,2024-05-27 23:31:51,2025-04-29 21:26:24
+707,7,Accusantium dolores,Nemo minus tenetur.,3059.99,32,Comida Saludable,True,2024-05-24 23:31:51,2025-04-29 21:26:24
+708,7,Iste illo,Reprehenderit provident magni blanditiis quis numquam nemo maiores.,1070.28,7,Comida Saludable,True,2024-05-28 23:31:51,2025-04-29 21:26:24
+709,7,Nisi labore,Voluptas optio corporis autem similique.,3979.05,47,Comida Saludable,True,2024-05-25 23:31:51,2025-04-29 21:26:24
+710,7,Quidem dignissimos,Debitis laborum autem reprehenderit.,3321.37,10,Comida Saludable,True,2024-05-23 23:31:51,2025-04-29 21:26:24
+801,8,Sushi roll,Roll de salmón y palta,5236.74,2,Comida Japonesa,False,2025-04-13 04:17:04,2025-04-23 10:45:00
+802,8,Nigiri de salmón,Piezas de arroz con salmón crudo,3532.64,2,Comida Japonesa,True,2025-04-12 04:17:04,2025-04-23 10:45:00
+803,8,Ramen,Sopa japonesa con fideos y carne,1086.08,6,Comida Japonesa,True,2025-04-10 04:17:04,2025-04-23 10:45:00
+804,8,Tempura,Verduras y mariscos rebozados,1695.63,41,Comida Japonesa,True,2025-04-11 04:17:04,2025-04-23 10:45:00
+805,8,Gyozas,Empanadillas japonesas al vapor,2540.63,46,Comida Japonesa,True,2025-04-14 04:17:04,2025-04-23 10:45:00
+806,8,Adipisci fuga,Ea in voluptatem molestiae rerum quam nihil.,953.08,7,Comida Japonesa,True,2025-04-10 04:17:04,2025-04-23 10:45:00
+807,8,Exercitationem ducimus,Nisi atque iure.,3018.18,45,Comida Japonesa,True,2025-04-13 04:17:04,2025-04-23 10:45:00
+808,8,Voluptatem at,Tempore sint quos magnam hic mollitia.,4346.71,16,Comida Japonesa,True,2025-04-09 04:17:04,2025-04-23 10:45:00
+809,8,Ipsum cumque,Asperiores nihil libero laborum harum facere doloremque.,3591.88,24,Comida Japonesa,True,2025-04-10 04:17:04,2025-04-23 10:45:00
+810,8,Quasi a,Error sunt consequatur laboriosam aperiam error deserunt alias.,1639.62,16,Comida Japonesa,True,2025-04-14 04:17:04,2025-04-23 10:45:00
+901,9,Numquam laboriosam,Sed iusto eum magni ipsam pariatur cum.,2908.41,49,Comida Italiana,False,2025-01-12 22:52:10,2025-02-23 09:56:31
+902,9,Ravioles de ricota,Ravioles rellenos de ricota con salsa fileto,3127.27,16,Comida Italiana,True,2025-01-14 22:52:10,2025-02-23 09:56:31
+903,9,Ñoquis con tuco,Ñoquis de papa con salsa bolognesa,4147.26,7,Comida Italiana,True,2025-01-14 22:52:10,2025-02-23 09:56:31
+904,9,Doloremque architecto,Nihil vero nisi molestias.,5091.21,14,Comida Italiana,False,2025-01-12 22:52:10,2025-02-23 09:56:31
+905,9,Officia vel,Vitae veniam odit aliquam quos.,4741.11,13,Comida Italiana,True,2025-01-14 22:52:10,2025-02-23 09:56:31
+906,9,Pizza Muzzarella,Clásica pizza con muzzarella y salsa de tomate,2011.01,8,Comida Italiana,True,2025-01-12 22:52:10,2025-02-23 09:56:31
+907,9,Officiis enim,Ex iusto fugit id inventore dolore quo.,3063.05,19,Comida Italiana,True,2025-01-15 22:52:10,2025-02-23 09:56:31
+908,9,Ipsam molestias,Mollitia aut rerum nulla nesciunt.,1076.95,12,Comida Italiana,True,2025-01-16 22:52:10,2025-02-23 09:56:31
+909,9,Lasagna,"Capas de pasta, carne y salsa bechamel",1364.03,32,Comida Italiana,True,2025-01-16 22:52:10,2025-02-23 09:56:31
+910,9,Maxime fuga,Tenetur sit assumenda placeat nihil soluta ipsa.,1234.63,39,Comida Italiana,True,2025-01-12 22:52:10,2025-02-23 09:56:31
+1001,10,Voluptatum aspernatur,Impedit doloremque sed.,1473.12,20,Comida Mexicana,True,2025-01-29 20:03:10,2025-05-02 18:51:49
+1002,10,Nachos,"Totopos con queso, guacamole y salsa",3587.52,26,Comida Mexicana,True,2025-01-29 20:03:10,2025-05-02 18:51:49
+1003,10,Porro ut,Veniam neque omnis dignissimos.,2996.95,8,Comida Mexicana,True,2025-01-27 20:03:10,2025-05-02 18:51:49
+1004,10,Molestiae earum,Quod dignissimos aspernatur sint at magni et.,3790.9,15,Comida Mexicana,True,2025-01-31 20:03:10,2025-05-02 18:51:49
+1005,10,Burrito,"Tortilla rellena de carne, frijoles y arroz",1416.14,45,Comida Mexicana,True,2025-01-30 20:03:10,2025-05-02 18:51:49
+1006,10,Quesadillas,Tortilla con queso derretido y guarniciones,2912.78,42,Comida Mexicana,True,2025-01-27 20:03:10,2025-05-02 18:51:49
+1007,10,Distinctio quas,Deserunt facere quam eos ipsa odit.,5128.87,32,Comida Mexicana,False,2025-02-02 20:03:10,2025-05-02 18:51:49
+1008,10,Enchiladas,Tortillas rellenas bañadas en salsa picante,3228.1,5,Comida Mexicana,True,2025-01-27 20:03:10,2025-05-02 18:51:49
+1009,10,At natus,Vitae nam vero tenetur perspiciatis.,1146.89,7,Comida Mexicana,True,2025-02-02 20:03:10,2025-05-02 18:51:49
+1010,10,Quasi veniam,In ipsam tempora.,1035.63,24,Comida Mexicana,True,2025-02-02 20:03:10,2025-05-02 18:51:49
+1101,11,Molestias adipisci,Quas esse ab deleniti.,3716.09,11,Comida Argentina,True,2024-06-22 12:57:25,2024-06-21 02:16:35
+1102,11,Milanesa con papas,Milanesa de carne con papas fritas,1364.77,43,Comida Argentina,True,2024-06-18 12:57:25,2024-06-21 02:16:35
+1103,11,Asperiores tempore,Laboriosam modi aut necessitatibus magni vitae.,4175.85,29,Comida Argentina,True,2024-06-19 12:57:25,2024-06-21 02:16:35
+1104,11,Reprehenderit voluptate,Commodi dignissimos nobis dolor saepe adipisci voluptas doloremque.,3429.75,25,Comida Argentina,True,2024-06-17 12:57:25,2024-06-21 02:16:35
+1105,11,Voluptate accusantium,Omnis soluta perspiciatis adipisci sit fugit facere.,4036.63,23,Comida Argentina,True,2024-06-21 12:57:25,2024-06-21 02:16:35
+1106,11,Maiores pariatur,Quaerat exercitationem expedita assumenda ipsam voluptatum quia quia.,3418.45,11,Comida Argentina,True,2024-06-22 12:57:25,2024-06-21 02:16:35
+1107,11,Locro,Tradicional guiso argentino,2977.86,45,Comida Argentina,True,2024-06-19 12:57:25,2024-06-21 02:16:35
+1108,11,Quam nam,Ullam illo ut ex quos tempore quod non.,4021.08,28,Comida Argentina,True,2024-06-18 12:57:25,2024-06-21 02:16:35
+1109,11,Asado para 2,Variedad de cortes de carne para dos personas,1206.21,43,Comida Argentina,True,2024-06-17 12:57:25,2024-06-21 02:16:35
+1110,11,Empanadas de pollo,Empanadas horneadas rellenas de pollo,3349.22,44,Comida Argentina,True,2024-06-17 12:57:25,2024-06-21 02:16:35
+1201,12,Nesciunt corporis,Assumenda magnam commodi explicabo ratione modi in.,2350.76,1,Comida India,True,2024-11-09 06:56:20,2025-01-18 02:44:02
+1202,12,A libero,Molestiae doloremque facere eveniet quidem.,3345.06,43,Comida India,True,2024-11-06 06:56:20,2025-01-18 02:44:02
+1203,12,Excepturi sit,Dicta ad eius sapiente voluptatibus quibusdam.,3088.5,3,Comida India,False,2024-11-07 06:56:20,2025-01-18 02:44:02
+1204,12,Eaque iste,Quas cumque ea.,3687.04,50,Comida India,True,2024-11-09 06:56:20,2025-01-18 02:44:02
+1205,12,Tikka Masala,Pollo en salsa cremosa de tomate,2930.25,18,Comida India,True,2024-11-04 06:56:20,2025-01-18 02:44:02
+1206,12,Naan,Pan tradicional indio,4984.67,29,Comida India,True,2024-11-06 06:56:20,2025-01-18 02:44:02
+1207,12,Arroz con vegetales,Arroz con mezcla de vegetales y especias,3902.84,38,Comida India,True,2024-11-03 06:56:20,2025-01-18 02:44:02
+1208,12,Illo possimus,Dolore et ipsa aliquam.,1352.46,20,Comida India,True,2024-11-05 06:56:20,2025-01-18 02:44:02
+1209,12,Facilis possimus,Possimus illum fugiat voluptatum harum possimus voluptate.,3344.64,42,Comida India,False,2024-11-07 06:56:20,2025-01-18 02:44:02
+1210,12,Explicabo quam,Quae alias ipsum quasi quas facere.,3383.16,5,Comida India,True,2024-11-09 06:56:20,2025-01-18 02:44:02
+1301,13,Pancho completo,Pancho con todos los aderezos,3993.25,35,Comida Callejera,True,2024-05-29 14:46:09,2024-09-04 23:07:19
+1302,13,Provident veniam,Sapiente omnis sint saepe saepe ex.,3366.99,48,Comida Callejera,True,2024-06-01 14:46:09,2024-09-04 23:07:19
+1303,13,Choripán,Sandwich de chorizo con chimichurri,4791.21,6,Comida Callejera,True,2024-05-29 14:46:09,2024-09-04 23:07:19
+1304,13,Voluptatem maxime,Quaerat exercitationem soluta.,3431.27,34,Comida Callejera,True,2024-05-27 14:46:09,2024-09-04 23:07:19
+1305,13,Mollitia id,Dicta corrupti perferendis adipisci adipisci.,3970.1,33,Comida Callejera,True,2024-05-30 14:46:09,2024-09-04 23:07:19
+1306,13,Pizza al molde,Porción de pizza al molde,962.64,13,Comida Callejera,True,2024-05-28 14:46:09,2024-09-04 23:07:19
+1307,13,Voluptas modi,A tempora voluptate quasi quod voluptatibus.,3964.57,36,Comida Callejera,True,2024-06-01 14:46:09,2024-09-04 23:07:19
+1308,13,Sandwich de milanesa,Milanesa en pan francés con lechuga y tomate,1288.96,32,Comida Callejera,True,2024-05-26 14:46:09,2024-09-04 23:07:19
+1309,13,Placeat veritatis,Beatae quo vero labore architecto laborum voluptatibus.,4001.42,28,Comida Callejera,True,2024-05-30 14:46:09,2024-09-04 23:07:19
+1310,13,Lomito completo,"Sandwich de lomo con jamón, queso y huevo",3335.35,23,Comida Callejera,True,2024-05-27 14:46:09,2024-09-04 23:07:19
+1401,14,Hamburguesa doble,"Doble carne con queso, lechuga y tomate",3425.8,33,Comida Rápida,True,2024-06-21 15:13:50,2025-04-17 22:13:34
+1402,14,Papas fritas,Porción grande de papas fritas crujientes,2426.96,29,Comida Rápida,True,2024-06-22 15:13:50,2025-04-17 22:13:34
+1403,14,Hot Dog,Pancho completo con aderezos,4215.06,45,Comida Rápida,True,2024-06-20 15:13:50,2025-04-17 22:13:34
+1404,14,Nuggets de pollo,6 piezas de nuggets con salsa,4216.62,22,Comida Rápida,True,2024-06-22 15:13:50,2025-04-17 22:13:34
+1405,14,Ensalada César,"Ensalada con pollo, croutons y aderezo césar",3091.63,9,Comida Rápida,True,2024-06-23 15:13:50,2025-04-17 22:13:34
+1406,14,Expedita quos,Labore provident voluptates nam dicta accusamus incidunt blanditiis.,1232.1,10,Comida Rápida,True,2024-06-22 15:13:50,2025-04-17 22:13:34
+1407,14,Dolor itaque,Magnam excepturi temporibus architecto occaecati omnis laudantium.,1181.01,26,Comida Rápida,True,2024-06-21 15:13:50,2025-04-17 22:13:34
+1408,14,Temporibus ut,Tenetur eaque perspiciatis ipsa possimus officiis magnam.,3726.67,13,Comida Rápida,True,2024-06-21 15:13:50,2025-04-17 22:13:34
+1409,14,Et maiores,Dolores eum officia.,2324.63,10,Comida Rápida,True,2024-06-23 15:13:50,2025-04-17 22:13:34
+1410,14,Quis error,Molestiae dolor eius labore quisquam inventore.,2548.95,4,Comida Rápida,True,2024-06-22 15:13:50,2025-04-17 22:13:34
+1501,15,Quidem dignissimos,Debitis laborum autem reprehenderit.,3835.32,25,Comida Saludable,True,2025-04-29 18:35:33,2025-05-10 20:29:51
+1502,15,Quos ea,Cumque nemo ipsum inventore quam minus.,4408.84,8,Comida Saludable,False,2025-04-26 18:35:33,2025-05-10 20:29:51
+1503,15,Ensalada César,"Ensalada con pollo, croutons y aderezo césar",1772.07,34,Comida Saludable,True,2025-04-25 18:35:33,2025-05-10 20:29:51
+1504,15,Wrap vegetariano,Wrap con vegetales frescos y hummus,4027.86,11,Comida Saludable,True,2025-04-27 18:35:33,2025-05-10 20:29:51
+1505,15,Saepe voluptate,Magnam rerum sit accusamus fugit.,4545.86,30,Comida Saludable,True,2025-04-28 18:35:33,2025-05-10 20:29:51
+1506,15,Iste illo,Reprehenderit provident magni blanditiis quis numquam nemo maiores.,1130.52,17,Comida Saludable,True,2025-04-23 18:35:33,2025-05-10 20:29:51
+1507,15,Accusantium dolores,Nemo minus tenetur.,3248.33,26,Comida Saludable,True,2025-04-29 18:35:33,2025-05-10 20:29:51
+1508,15,Bowl de quinoa,Quinoa con vegetales asados y aderezo,4562.2,43,Comida Saludable,True,2025-04-28 18:35:33,2025-05-10 20:29:51
+1509,15,Nisi labore,Voluptas optio corporis autem similique.,4359.83,18,Comida Saludable,False,2025-04-29 18:35:33,2025-05-10 20:29:51
+1510,15,Ipsa praesentium,Facere cumque odio explicabo.,3565.18,5,Comida Saludable,False,2025-04-24 18:35:33,2025-05-10 20:29:51
+1601,16,Sushi roll,Roll de salmón y palta,4454.8,31,Comida Japonesa,True,2024-11-22 01:52:31,2025-04-30 18:25:00
+1602,16,Nigiri de salmón,Piezas de arroz con salmón crudo,3226.88,44,Comida Japonesa,True,2024-11-19 01:52:31,2025-04-30 18:25:00
+1603,16,Ramen,Sopa japonesa con fideos y carne,1270.64,10,Comida Japonesa,True,2024-11-22 01:52:31,2025-04-30 18:25:00
+1604,16,Tempura,Verduras y mariscos rebozados,1647.86,18,Comida Japonesa,True,2024-11-19 01:52:31,2025-04-30 18:25:00
+1605,16,Gyozas,Empanadillas japonesas al vapor,2384.43,23,Comida Japonesa,True,2024-11-19 01:52:31,2025-04-30 18:25:00
+1606,16,Adipisci fuga,Ea in voluptatem molestiae rerum quam nihil.,879.42,15,Comida Japonesa,True,2024-11-19 01:52:31,2025-04-30 18:25:00
+1607,16,Exercitationem ducimus,Nisi atque iure.,2791.5,40,Comida Japonesa,True,2024-11-20 01:52:31,2025-04-30 18:25:00
+1608,16,Voluptatem at,Tempore sint quos magnam hic mollitia.,4395.55,16,Comida Japonesa,True,2024-11-22 01:52:31,2025-04-30 18:25:00
+1609,16,Ipsum cumque,Asperiores nihil libero laborum harum facere doloremque.,4233.17,0,Comida Japonesa,True,2024-11-22 01:52:31,2025-04-30 18:25:00
+1610,16,Quasi a,Error sunt consequatur laboriosam aperiam error deserunt alias.,1868.93,31,Comida Japonesa,True,2024-11-16 01:52:31,2025-04-30 18:25:00
+1701,17,Maxime fuga,Tenetur sit assumenda placeat nihil soluta ipsa.,1416.67,26,Comida Italiana,True,2024-11-25 01:35:13,2025-03-27 21:15:10
+1702,17,Numquam laboriosam,Sed iusto eum magni ipsam pariatur cum.,2615.56,18,Comida Italiana,True,2024-11-30 01:35:13,2025-03-27 21:15:10
+1703,17,Ravioles de ricota,Ravioles rellenos de ricota con salsa fileto,3283.96,40,Comida Italiana,False,2024-11-28 01:35:13,2025-03-27 21:15:10
+1704,17,At eos,Quaerat a distinctio quae velit officia similique.,1022.79,26,Comida Italiana,True,2024-11-24 01:35:13,2025-03-27 21:15:10
+1705,17,Pizza Napolitana,"Pizza con muzzarella, tomate y albahaca",1549.01,41,Comida Italiana,True,2024-11-28 01:35:13,2025-03-27 21:15:10
+1706,17,Officia vel,Vitae veniam odit aliquam quos.,4957.18,11,Comida Italiana,True,2024-11-28 01:35:13,2025-03-27 21:15:10
+1707,17,Mollitia qui,Nulla officia tenetur sint repellendus reiciendis.,1956.42,17,Comida Italiana,True,2024-11-28 01:35:13,2025-03-27 21:15:10
+1708,17,Lasagna,"Capas de pasta, carne y salsa bechamel",1364.71,44,Comida Italiana,True,2024-11-30 01:35:13,2025-03-27 21:15:10
+1709,17,Eveniet exercitationem,Illum blanditiis dolorum soluta eveniet reprehenderit consequuntur.,3319.66,39,Comida Italiana,True,2024-11-28 01:35:13,2025-03-27 21:15:10
+1710,17,Officiis enim,Ex iusto fugit id inventore dolore quo.,3115.43,31,Comida Italiana,True,2024-11-25 01:35:13,2025-03-27 21:15:10
+1801,18,Quesadillas,Tortilla con queso derretido y guarniciones,2823.38,35,Comida Mexicana,False,2024-12-27 01:12:44,2025-02-18 21:34:39
+1802,18,Quasi veniam,In ipsam tempora.,875.92,45,Comida Mexicana,True,2024-12-25 01:12:44,2025-02-18 21:34:39
+1803,18,Enchiladas,Tortillas rellenas bañadas en salsa picante,3326.89,4,Comida Mexicana,True,2024-12-27 01:12:44,2025-02-18 21:34:39
+1804,18,Quis unde,Optio doloribus doloribus nisi consectetur molestiae quisquam consequatur.,2743.26,30,Comida Mexicana,True,2024-12-27 01:12:44,2025-02-18 21:34:39
+1805,18,Distinctio quas,Deserunt facere quam eos ipsa odit.,4399.36,2,Comida Mexicana,True,2024-12-26 01:12:44,2025-02-18 21:34:39
+1806,18,Tacos,Trio de tacos de carne con salsa,3848.03,6,Comida Mexicana,True,2024-12-27 01:12:44,2025-02-18 21:34:39
+1807,18,Burrito,"Tortilla rellena de carne, frijoles y arroz",1574.08,7,Comida Mexicana,True,2024-12-28 01:12:44,2025-02-18 21:34:39
+1808,18,Molestiae aliquam,Quas at neque dolor.,4007.55,15,Comida Mexicana,True,2024-12-24 01:12:44,2025-02-18 21:34:39
+1809,18,Nachos,"Totopos con queso, guacamole y salsa",3170.41,2,Comida Mexicana,True,2024-12-26 01:12:44,2025-02-18 21:34:39
+1810,18,Nihil sequi,Nisi neque ducimus natus modi nihil.,4556.66,10,Comida Mexicana,True,2024-12-25 01:12:44,2025-02-18 21:34:39
+1901,19,Locro,Tradicional guiso argentino,2483.47,48,Comida Argentina,False,2024-10-15 13:07:50,2025-04-09 19:23:47
+1902,19,Maiores pariatur,Quaerat exercitationem expedita assumenda ipsam voluptatum quia quia.,3262.94,48,Comida Argentina,True,2024-10-14 13:07:50,2025-04-09 19:23:47
+1903,19,Mollitia placeat,Ullam tenetur optio commodi laudantium dolor.,2242.54,18,Comida Argentina,True,2024-10-12 13:07:50,2025-04-09 19:23:47
+1904,19,Reprehenderit voluptate,Commodi dignissimos nobis dolor saepe adipisci voluptas doloremque.,3971.86,5,Comida Argentina,True,2024-10-10 13:07:50,2025-04-09 19:23:47
+1905,19,Autem accusantium,Quasi nam ab ipsam ex soluta adipisci.,1960.29,33,Comida Argentina,True,2024-10-13 13:07:50,2025-04-09 19:23:47
+1906,19,Quam nam,Ullam illo ut ex quos tempore quod non.,4589.11,16,Comida Argentina,True,2024-10-13 13:07:50,2025-04-09 19:23:47
+1907,19,Empanadas de pollo,Empanadas horneadas rellenas de pollo,3229.82,4,Comida Argentina,True,2024-10-15 13:07:50,2025-04-09 19:23:47
+1908,19,Asperiores tempore,Laboriosam modi aut necessitatibus magni vitae.,3892.84,44,Comida Argentina,True,2024-10-13 13:07:50,2025-04-09 19:23:47
+1909,19,Empanadas de carne,Empanadas fritas rellenas de carne picante,773.53,5,Comida Argentina,True,2024-10-14 13:07:50,2025-04-09 19:23:47
+1910,19,Eaque ut,Exercitationem vero culpa reprehenderit quod impedit nesciunt.,1459.75,42,Comida Argentina,True,2024-10-15 13:07:50,2025-04-09 19:23:47
+2001,20,Pollo al curry,Pollo en salsa curry con arroz basmati,2948.54,4,Comida India,True,2024-09-04 13:54:57,2024-11-10 19:13:38
+2002,20,Samosas,Empanadillas de vegetales con especias,3598.42,23,Comida India,True,2024-09-04 13:54:57,2024-11-10 19:13:38
+2003,20,Facilis possimus,Possimus illum fugiat voluptatum harum possimus voluptate.,3408.93,30,Comida India,True,2024-09-04 13:54:57,2024-11-10 19:13:38
+2004,20,Illo possimus,Dolore et ipsa aliquam.,1537.11,42,Comida India,True,2024-09-09 13:54:57,2024-11-10 19:13:38
+2005,20,Nesciunt corporis,Assumenda magnam commodi explicabo ratione modi in.,2228.54,11,Comida India,True,2024-09-08 13:54:57,2024-11-10 19:13:38
+2006,20,Explicabo quam,Quae alias ipsum quasi quas facere.,2887.5,44,Comida India,True,2024-09-04 13:54:57,2024-11-10 19:13:38
+2007,20,Excepturi sit,Dicta ad eius sapiente voluptatibus quibusdam.,2641.9,4,Comida India,True,2024-09-05 13:54:57,2024-11-10 19:13:38
+2008,20,Naan,Pan tradicional indio,4840.87,48,Comida India,True,2024-09-04 13:54:57,2024-11-10 19:13:38
+2009,20,Tikka Masala,Pollo en salsa cremosa de tomate,3121.17,20,Comida India,True,2024-09-09 13:54:57,2024-11-10 19:13:38
+2010,20,Eaque iste,Quas cumque ea.,4107.47,16,Comida India,True,2024-09-07 13:54:57,2024-11-10 19:13:38

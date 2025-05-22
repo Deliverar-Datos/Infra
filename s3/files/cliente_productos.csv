@@ -1,0 +1,101 @@
+id,precio,nombre,desc,descripcion_larga,fecha_creacion
+1,2125.2,Pizza Muzzarella,Comida Italiana,Clásica pizza con muzzarella y salsa de tomate,2024-10-20 04:40:53
+2,1443.87,Pizza Napolitana,Comida Italiana,"Pizza con muzzarella, tomate y albahaca",2024-07-05 17:38:06
+3,3281.25,Ravioles de ricota,Comida Italiana,Ravioles rellenos de ricota con salsa fileto,2024-10-30 19:37:14
+4,4269.84,Ñoquis con tuco,Comida Italiana,Ñoquis de papa con salsa bolognesa,2024-10-24 12:16:23
+5,1251.68,Lasagna,Comida Italiana,"Capas de pasta, carne y salsa bechamel",2025-03-13 08:54:13
+6,1330.37,Milanesa con papas,Comida Argentina,Milanesa de carne con papas fritas,2024-05-21 04:47:17
+7,852.9,Empanadas de carne,Comida Argentina,Empanadas fritas rellenas de carne picante,2025-01-14 17:16:32
+8,3071.43,Empanadas de pollo,Comida Argentina,Empanadas horneadas rellenas de pollo,2025-04-05 05:31:58
+9,1136.66,Asado para 2,Comida Argentina,Variedad de cortes de carne para dos personas,2024-08-16 22:30:16
+10,2574.11,Locro,Comida Argentina,Tradicional guiso argentino,2024-10-04 20:09:06
+11,3350.64,Hamburguesa doble,Comida Rápida,"Doble carne con queso, lechuga y tomate",2025-01-28 04:22:54
+12,2035.05,Papas fritas,Comida Rápida,Porción grande de papas fritas crujientes,2024-07-11 04:13:50
+13,3857.16,Hot Dog,Comida Rápida,Pancho completo con aderezos,2024-09-30 05:42:41
+14,4091.0,Nuggets de pollo,Comida Rápida,6 piezas de nuggets con salsa,2024-05-28 05:45:33
+15,3125.93,Ensalada César,Comida Rápida,"Ensalada con pollo, croutons y aderezo césar",2024-06-14 14:13:21
+16,4379.73,Sushi roll,Comida Japonesa,Roll de salmón y palta,2024-12-29 21:21:07
+17,3387.48,Nigiri de salmón,Comida Japonesa,Piezas de arroz con salmón crudo,2024-10-11 17:47:28
+18,1130.8,Ramen,Comida Japonesa,Sopa japonesa con fideos y carne,2025-05-03 12:47:26
+19,1579.95,Tempura,Comida Japonesa,Verduras y mariscos rebozados,2025-03-10 00:27:10
+20,2319.88,Gyozas,Comida Japonesa,Empanadillas japonesas al vapor,2024-10-17 13:14:45
+21,3951.26,Tacos,Comida Mexicana,Trio de tacos de carne con salsa,2024-08-05 15:37:41
+22,1398.53,Burrito,Comida Mexicana,"Tortilla rellena de carne, frijoles y arroz",2024-12-02 22:25:34
+23,3007.99,Quesadillas,Comida Mexicana,Tortilla con queso derretido y guarniciones,2024-05-24 12:12:21
+24,3340.24,Nachos,Comida Mexicana,"Totopos con queso, guacamole y salsa",2024-07-19 17:01:49
+25,2964.51,Enchiladas,Comida Mexicana,Tortillas rellenas bañadas en salsa picante,2024-10-05 03:59:54
+26,3023.08,Pollo al curry,Comida India,Pollo en salsa curry con arroz basmati,2024-07-21 22:55:29
+27,4092.7,Arroz con vegetales,Comida India,Arroz con mezcla de vegetales y especias,2025-02-03 05:54:13
+28,3286.52,Samosas,Comida India,Empanadillas de vegetales con especias,2024-11-30 14:05:16
+29,2662.84,Tikka Masala,Comida India,Pollo en salsa cremosa de tomate,2024-08-12 02:34:50
+30,4454.81,Naan,Comida India,Pan tradicional indio,2024-09-14 00:09:43
+31,1752.55,Ensalada César,Comida Saludable,"Ensalada con pollo, croutons y aderezo césar",2024-11-25 17:12:53
+32,3657.25,Wrap vegetariano,Comida Saludable,Wrap con vegetales frescos y hummus,2024-12-09 22:01:06
+33,4400.59,Bowl de quinoa,Comida Saludable,Quinoa con vegetales asados y aderezo,2025-03-09 19:32:26
+34,1830.18,Smoothie verde,Comida Saludable,"Batido de espinaca, banana y manzana",2024-08-18 08:51:46
+35,2150.77,Ensalada de salmón,Comida Saludable,Salmón ahumado con vegetales frescos,2024-09-22 04:34:34
+36,4260.58,Pancho completo,Comida Callejera,Pancho con todos los aderezos,2024-11-12 10:52:15
+37,2910.1,Lomito completo,Comida Callejera,"Sandwich de lomo con jamón, queso y huevo",2025-02-27 10:12:25
+38,4119.6,Choripán,Comida Callejera,Sandwich de chorizo con chimichurri,2024-08-12 16:51:09
+39,998.83,Pizza al molde,Comida Callejera,Porción de pizza al molde,2025-03-26 03:31:28
+40,1109.67,Sandwich de milanesa,Comida Callejera,Milanesa en pan francés con lechuga y tomate,2024-12-04 00:35:24
+41,1012.43,Iste illo,Comida Saludable,Reprehenderit provident magni blanditiis quis numquam nemo maiores.,2025-05-20 18:41:41
+42,1445.19,Illo possimus,Comida India,Dolore et ipsa aliquam.,2025-05-20 18:38:13
+43,1280.38,Expedita quos,Comida Rápida,Labore provident voluptates nam dicta accusamus incidunt blanditiis.,2025-05-20 18:39:53
+44,1065.71,Dolor itaque,Comida Rápida,Magnam excepturi temporibus architecto occaecati omnis laudantium.,2025-05-20 18:38:00
+45,4373.28,Doloremque architecto,Comida Italiana,Nihil vero nisi molestias.,2025-05-20 18:40:32
+46,2581.62,Excepturi sit,Comida India,Dicta ad eius sapiente voluptatibus quibusdam.,2025-05-20 18:38:24
+47,4302.49,Nisi labore,Comida Saludable,Voluptas optio corporis autem similique.,2025-05-20 18:38:19
+48,3340.92,Minus suscipit,Comida Callejera,Tempora possimus occaecati voluptate.,2025-05-20 18:41:48
+49,3655.41,A libero,Comida India,Molestiae doloremque facere eveniet quidem.,2025-05-20 18:38:32
+50,2707.59,Porro ut,Comida Mexicana,Veniam neque omnis dignissimos.,2025-05-20 18:41:21
+51,1285.49,Eaque ut,Comida Argentina,Exercitationem vero culpa reprehenderit quod impedit nesciunt.,2025-05-20 18:39:51
+52,4282.66,Quam nam,Comida Argentina,Ullam illo ut ex quos tempore quod non.,2025-05-20 18:38:36
+53,2871.12,Numquam laboriosam,Comida Italiana,Sed iusto eum magni ipsam pariatur cum.,2025-05-20 18:41:48
+54,3876.38,Placeat veritatis,Comida Callejera,Beatae quo vero labore architecto laborum voluptatibus.,2025-05-20 18:40:22
+55,3662.69,Mollitia id,Comida Callejera,Dicta corrupti perferendis adipisci adipisci.,2025-05-20 18:38:19
+56,3766.45,Reprehenderit voluptate,Comida Argentina,Commodi dignissimos nobis dolor saepe adipisci voluptas doloremque.,2025-05-20 18:39:20
+57,1225.7,At natus,Comida Mexicana,Vitae nam vero tenetur perspiciatis.,2025-05-20 18:36:49
+58,3303.58,Quidem dignissimos,Comida Saludable,Debitis laborum autem reprehenderit.,2025-05-20 18:39:19
+59,4360.46,Officia vel,Comida Italiana,Vitae veniam odit aliquam quos.,2025-05-20 18:36:50
+60,3975.33,Molestiae aliquam,Comida Mexicana,Quas at neque dolor.,2025-05-20 18:41:03
+61,2860.1,Maiores pariatur,Comida Argentina,Quaerat exercitationem expedita assumenda ipsam voluptatum quia quia.,2025-05-20 18:37:29
+62,2281.45,Nesciunt corporis,Comida India,Assumenda magnam commodi explicabo ratione modi in.,2025-05-20 18:38:23
+63,3362.29,Voluptas modi,Comida Callejera,A tempora voluptate quasi quod voluptatibus.,2025-05-20 18:41:28
+64,3841.14,Asperiores tempore,Comida Argentina,Laboriosam modi aut necessitatibus magni vitae.,2025-05-20 18:37:41
+65,4381.84,Nihil sequi,Comida Mexicana,Nisi neque ducimus natus modi nihil.,2025-05-20 18:40:13
+66,3235.25,Voluptatem maxime,Comida Callejera,Quaerat exercitationem soluta.,2025-05-20 18:37:39
+67,1798.67,Mollitia qui,Comida Italiana,Nulla officia tenetur sint repellendus reiciendis.,2025-05-20 18:37:21
+68,3453.33,Molestias adipisci,Comida Argentina,Quas esse ab deleniti.,2025-05-20 18:42:30
+69,2572.47,Quis unde,Comida Mexicana,Optio doloribus doloribus nisi consectetur molestiae quisquam consequatur.,2025-05-20 18:40:59
+70,4269.66,Adipisci ipsam,Comida Callejera,Harum repellendus laudantium incidunt veniam quia.,2025-05-20 18:37:32
+71,3371.77,Temporibus ut,Comida Rápida,Tenetur eaque perspiciatis ipsa possimus officiis magnam.,2025-05-20 18:40:31
+72,2280.98,Et maiores,Comida Rápida,Dolores eum officia.,2025-05-20 18:37:13
+73,4156.77,Voluptate accusantium,Comida Argentina,Omnis soluta perspiciatis adipisci sit fugit facere.,2025-05-20 18:37:11
+74,3837.48,Eaque iste,Comida India,Quas cumque ea.,2025-05-20 18:37:54
+75,907.3,Adipisci fuga,Comida Japonesa,Ea in voluptatem molestiae rerum quam nihil.,2025-05-20 18:38:55
+76,3000.81,Exercitationem ducimus,Comida Japonesa,Nisi atque iure.,2025-05-20 18:42:19
+77,4280.22,Quos ea,Comida Saludable,Cumque nemo ipsum inventore quam minus.,2025-05-20 18:39:52
+78,3734.17,Voluptatem at,Comida Japonesa,Tempore sint quos magnam hic mollitia.,2025-05-20 18:40:57
+79,3755.75,Molestiae earum,Comida Mexicana,Quod dignissimos aspernatur sint at magni et.,2025-05-20 18:40:20
+80,1838.28,Autem accusantium,Comida Argentina,Quasi nam ab ipsam ex soluta adipisci.,2025-05-20 18:37:40
+81,3609.8,Ipsum cumque,Comida Japonesa,Asperiores nihil libero laborum harum facere doloremque.,2025-05-20 18:42:01
+82,2935.83,Provident veniam,Comida Callejera,Sapiente omnis sint saepe saepe ex.,2025-05-20 18:40:56
+83,3354.67,Ipsa praesentium,Comida Saludable,Facere cumque odio explicabo.,2025-05-20 18:36:44
+84,1278.82,Maxime fuga,Comida Italiana,Tenetur sit assumenda placeat nihil soluta ipsa.,2025-05-20 18:36:36
+85,2500.69,Quis error,Comida Rápida,Molestiae dolor eius labore quisquam inventore.,2025-05-20 18:36:46
+86,2860.55,Accusantium dolores,Comida Saludable,Nemo minus tenetur.,2025-05-20 18:42:08
+87,2931.01,Explicabo quam,Comida India,Quae alias ipsum quasi quas facere.,2025-05-20 18:39:46
+88,3519.25,Eveniet exercitationem,Comida Italiana,Illum blanditiis dolorum soluta eveniet reprehenderit consequuntur.,2025-05-20 18:38:26
+89,1705.53,Quasi a,Comida Japonesa,Error sunt consequatur laboriosam aperiam error deserunt alias.,2025-05-20 18:42:12
+90,4368.86,Distinctio quas,Comida Mexicana,Deserunt facere quam eos ipsa odit.,2025-05-20 18:38:16
+91,1081.46,At eos,Comida Italiana,Quaerat a distinctio quae velit officia similique.,2025-05-20 18:40:31
+92,2887.49,Officiis enim,Comida Italiana,Ex iusto fugit id inventore dolore quo.,2025-05-20 18:39:01
+93,1268.97,A expedita,Comida Callejera,Distinctio veritatis similique earum.,2025-05-20 18:41:50
+94,4062.28,Saepe voluptate,Comida Saludable,Magnam rerum sit accusamus fugit.,2025-05-20 18:42:21
+95,1933.05,Mollitia placeat,Comida Argentina,Ullam tenetur optio commodi laudantium dolor.,2025-05-20 18:41:47
+96,894.94,Quasi veniam,Comida Mexicana,In ipsam tempora.,2025-05-20 18:41:56
+97,1250.73,Voluptatum aspernatur,Comida Mexicana,Impedit doloremque sed.,2025-05-20 18:38:56
+98,3295.94,Facilis possimus,Comida India,Possimus illum fugiat voluptatum harum possimus voluptate.,2025-05-20 18:39:41
+99,1082.79,Ipsam molestias,Comida Italiana,Mollitia aut rerum nulla nesciunt.,2025-05-20 18:40:43
+100,1770.91,Velit quis,Comida Callejera,Officia placeat voluptate ipsa distinctio atque ad nisi.,2025-05-20 18:40:05

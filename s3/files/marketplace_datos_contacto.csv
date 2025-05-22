@@ -1,0 +1,21 @@
+contacto_id,tenant_id,email,telefono,movil,direccion,sitio_web,linkedin,fecha_creacion
+1,1,contacto@lanonna.com,+34879 615 468,+34 828057750,"Cuesta Buenaventura Bayón 20 Puerta 2 , Buenos Aires, Argentina",www.lanonna.com,https://linkedin.com/company/lanonna,2025-05-07 02:54:04
+2,2,contacto@burritoexpress.com,+34976 425 268,+34 922 32 68 77,"Urbanización de Sebastián Morcillo 87 Apt. 59 , Buenos Aires, Argentina",www.burritoexpress.com,https://linkedin.com/company/burritoexpress,2024-06-28 06:12:37
+3,3,contacto@donjulio.com,+34820 53 45 50,+34849510672,"Urbanización Albina Romero 946 Puerta 1 , Buenos Aires, Argentina",www.donjulio.com,https://linkedin.com/company/donjulio,2025-05-08 20:58:52
+4,4,contacto@bombayspice.com,+34878970291,+34 888841852,"Camino de Mario Camacho 52 Piso 9 , Buenos Aires, Argentina",www.bombayspice.com,https://linkedin.com/company/bombayspice,2024-09-21 06:08:12
+5,5,contacto@sanguchero.com,+34 881 055 800,+34813 19 92 79,"Avenida de Camila Olivé 838 Puerta 3 , Buenos Aires, Argentina",www.sanguchero.com,https://linkedin.com/company/sanguchero,2024-07-22 12:30:47
+6,6,contacto@mcrápido.com,+34 942 713 596,+34842 809 599,"Pasaje de Inés Font 402 Apt. 09 , Buenos Aires, Argentina",www.mcrápido.com,https://linkedin.com/company/mcrápido,2025-03-27 22:59:46
+7,7,contacto@verdequetequieroverde.com,+34 841 325 006,+34 741 592 174,"Ronda de Godofredo Zurita 85, Buenos Aires, Argentina",www.verdequetequieroverde.com,https://linkedin.com/company/verdequetequieroverde,2024-05-21 23:31:51
+8,8,contacto@sakurasushi.com,+34 947594514,+34841925878,"C. Urbano Huerta 47 Piso 9 , Buenos Aires, Argentina",www.sakurasushi.com,https://linkedin.com/company/sakurasushi,2025-04-08 04:17:04
+9,9,contacto@lanonna.com,+34 846 93 23 84,+34 876 734 296,"Callejón de Emigdio Agustí 76, Buenos Aires, Argentina",www.lanonna.com,https://linkedin.com/company/lanonna,2025-01-09 22:52:10
+10,10,contacto@fiestamexicana.com,+34 744 480 003,+34977 131 591,"Vial Teófila Carballo 36 Apt. 99 , Buenos Aires, Argentina",www.fiestamexicana.com,https://linkedin.com/company/fiestamexicana,2025-01-26 20:03:10
+11,11,contacto@elasador.com,+34874 331 510,+34826 13 29 14,"Paseo de Luna Saez 555, Buenos Aires, Argentina",www.elasador.com,https://linkedin.com/company/elasador,2024-06-15 12:57:25
+12,12,contacto@bombayspice.com,+34 945 147 316,+34 845 799 156,"Paseo de Alba Quintana 87 Piso 4 , Buenos Aires, Argentina",www.bombayspice.com,https://linkedin.com/company/bombayspice,2024-11-02 06:56:20
+13,13,contacto@pancho's.com,+34 828 749 347,+34985475997,"C. de Marc Escobar 842 Piso 1 , Buenos Aires, Argentina",www.pancho's.com,https://linkedin.com/company/pancho's,2024-05-25 14:46:09
+14,14,contacto@kingburger.com,+34885042790,+34914 075 270,"Pasaje de Constanza Baena 760 Piso 3 , Buenos Aires, Argentina",www.kingburger.com,https://linkedin.com/company/kingburger,2024-06-17 15:13:50
+15,15,contacto@saludableexpress.com,+34 881 045 680,+34 921 864 502,"Vial Fernanda Rocha 15, Buenos Aires, Argentina",www.saludableexpress.com,https://linkedin.com/company/saludableexpress,2025-04-22 18:35:33
+16,16,contacto@nippon.com,+34825693564,+34 942 210 464,"Calle Benigno Lamas 36, Buenos Aires, Argentina",www.nippon.com,https://linkedin.com/company/nippon,2024-11-15 01:52:31
+17,17,contacto@lanonna.com,+34 972120364,+34945227782,"C. de Lino Donaire 93, Buenos Aires, Argentina",www.lanonna.com,https://linkedin.com/company/lanonna,2024-11-23 01:35:13
+18,18,contacto@tacoloco.com,+34986 09 52 92,+34844 82 25 59,"Acceso de Ciro Planas 13, Buenos Aires, Argentina",www.tacoloco.com,https://linkedin.com/company/tacoloco,2024-12-23 01:12:44
+19,19,contacto@donjulio.com,+34 872 503 561,+34842 445 611,"Cuesta de Isaías Segarra 39 Piso 5 , Buenos Aires, Argentina",www.donjulio.com,https://linkedin.com/company/donjulio,2024-10-08 13:07:50
+20,20,contacto@curryhouse.com,+34943 169 159,+34979 09 04 38,"Rambla de Silvia Artigas 83, Buenos Aires, Argentina",www.curryhouse.com,https://linkedin.com/company/curryhouse,2024-09-03 13:54:57

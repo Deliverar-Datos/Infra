@@ -1,6 +1,12 @@
+# deploy/main.tf
+module "vpc" {
+  source = "../modulos"
+}
+
+
 resource "aws_instance" "postgres" {
   ami           = "ami-0f88e80871fd81e91" # Amazon Linux 2 AMI (us-east-1). ¡Verifica la AMI más reciente para tu región!
-  key_name      = "Datos" # Usa el nombre que elegiste al importar la clave
+  key_name      = "WEB" # Usa el nombre que elegiste al importar la clave
   instance_type = "t2.micro"
   subnet_id              = aws_subnet.mi_subnet_publica.id
   vpc_security_group_ids = [aws_security_group.postgres_sg.id]
@@ -23,7 +29,7 @@ tags = {
 
 resource "aws_security_group" "postgres_sg" {
   name_prefix = "postgres-sg-"
-  vpc_id      = aws_vpc.mi_vpc.id  # ← Esto es lo que faltaba
+  vpc_id      = module.vpc.vpc_id  # ← Esto es lo que faltaba
 
 
   ingress {
@@ -55,18 +61,10 @@ resource "aws_security_group" "postgres_sg" {
     Database    = "PostgreSQL"
   }
 }
-resource "aws_vpc" "mi_vpc" {
-  cidr_block = "10.0.0.0/16" # Rango de direcciones IP para tu VPC
-  enable_dns_support   = true
-  enable_dns_hostnames = true
 
-  tags = {
-    Name = "mi-vpc-terraform"
-  }
-}
 
 resource "aws_subnet" "mi_subnet_publica" {
-  vpc_id            = aws_vpc.mi_vpc.id
+  vpc_id            = module.vpc.vpc_id
   cidr_block        = "10.0.1.0/24" # Rango de direcciones IP para la subred pública
   availability_zone = "us-east-1a"   # Elige tu Availability Zone
 
@@ -76,7 +74,7 @@ resource "aws_subnet" "mi_subnet_publica" {
 }
 
 resource "aws_internet_gateway" "mi_igw" {
-  vpc_id = aws_vpc.mi_vpc.id
+  vpc_id = module.vpc.vpc_id
 
   tags = {
     Name = "mi-igw-terraform"
@@ -84,7 +82,7 @@ resource "aws_internet_gateway" "mi_igw" {
 }
 
 resource "aws_route_table" "mi_rt_publica" {
-  vpc_id = aws_vpc.mi_vpc.id
+  vpc_id = module.vpc.vpc_id
 
   route {
     cidr_block = "0.0.0.0/0"

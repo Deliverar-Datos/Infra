@@ -15,11 +15,10 @@ resource "aws_subnet" "react_subnet" {
   }
 }
 
-
-
-
-
-
+resource "aws_route_table_association" "front_rta" {
+  subnet_id      = aws_subnet.react_subnet.id
+  route_table_id = aws_route_table.vpc_route_table.id
+}
 
 # 5. Security Group: SSH + Puerto 3000
 resource "aws_security_group" "react_sg" {

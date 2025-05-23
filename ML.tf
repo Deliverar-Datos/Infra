@@ -1,7 +1,3 @@
-
-
-
-
 resource "aws_subnet" "main" {
   vpc_id                  = aws_vpc.lan-vpc.id  
   cidr_block              = "10.0.3.0/24"
@@ -9,7 +5,10 @@ resource "aws_subnet" "main" {
   map_public_ip_on_launch = true
 }
 
-
+resource "aws_route_table_association" "main_rta" {
+  subnet_id      = aws_subnet.main.id
+  route_table_id = aws_route_table.vpc_route_table.id
+}
 
 resource "aws_security_group" "backend_sg" {
   name        = "backend-sg"

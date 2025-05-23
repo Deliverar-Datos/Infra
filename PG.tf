@@ -13,6 +13,10 @@ resource "aws_subnet" "mi_subnet_publica" {
   }
 }
 
+resource "aws_route_table_association" "pg_rta" {
+  subnet_id      = aws_subnet.mi_subnet_publica.id
+  route_table_id = aws_route_table.vpc_route_table.id
+}
 
 resource "aws_instance" "postgres" {
   ami           = "ami-0f88e80871fd81e91" # Amazon Linux 2 AMI (us-east-1). ¡Verifica la AMI más reciente para tu región!

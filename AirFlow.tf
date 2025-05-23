@@ -9,35 +9,6 @@ resource "aws_vpc" "lan-vpc" {
 }
 
 
-# 3. Crear una Internet Gateway
-resource "aws_internet_gateway" "hadoop_igw" {
-  vpc_id = aws_vpc.lan-vpc.id  
-
-  tags = {
-    Name = "Hadoop-IGW"
-  }
-}
-
-# 4. Crear una tabla de ruteo para salida a internet
-resource "aws_route_table" "hadoop_route_table" {
-  vpc_id = aws_vpc.lan-vpc.id  
-
-  route {
-    cidr_block = "0.0.0.0/0"
-    gateway_id = aws_internet_gateway.hadoop_igw.id
-  }
-
-  tags = {
-    Name = "Hadoop-Route-Table"
-  }
-}
-
-# 5. Asociar la tabla de ruteo con la subnet
-resource "aws_route_table_association" "hadoop_rta" {
-  subnet_id      = aws_subnet.hadoop_subnet.id
-  route_table_id = aws_route_table.hadoop_route_table.id
-}
-
 
 output "vpc_id" {
   description = "El ID de la VPC creada."
@@ -114,7 +85,7 @@ resource "aws_instance" "airflow_instance" {
   key_name                = "hadoop" 
   user_data = file("scripts/init-docker-airflow.sh")
 
-  associate_public_ip_address = true
+  associate_public_ip_address = false
 
   tags = {
     Name = "airflow-node"

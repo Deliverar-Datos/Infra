@@ -3,6 +3,36 @@ provider "aws" {
 }
 
 
+
+# 3. Crear una Internet Gateway
+resource "aws_internet_gateway" "vpc_igw" {
+  vpc_id = aws_vpc.lan-vpc.id  
+
+  tags = {
+    Name = "IGW"
+  }
+}
+
+# 4. Crear una tabla de ruteo para salida a internet
+resource "aws_route_table" "vpc_route_table" {
+  vpc_id = aws_vpc.lan-vpc.id  
+
+  route {
+    cidr_block = "0.0.0.0/0"
+    gateway_id = aws_internet_gateway.vpc_igw.id
+  }
+
+  tags = {
+    Name = "vpc-Route-Table"
+  }
+}
+
+# 5. Asociar la tabla de ruteo con la subnet
+resource "aws_route_table_association" "hadoop_rta" {
+  subnet_id      = aws_subnet.hadoop_subnet.id
+  route_table_id = aws_route_table.vpc_route_table.id
+}
+
 data "aws_eip" "ipmaster" {
   id = "eipalloc-0469858303b8a3082" # ¡REEMPLAZA CON EL ID DE TU EIP EXISTENTE!
 }

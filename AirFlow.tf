@@ -31,7 +31,10 @@ resource "aws_subnet" "airflow_subnet" {
   }
 }
 
-
+resource "aws_route_table_association" "airflow_rta" {
+  subnet_id      = aws_subnet.airflow_subnet.id
+  route_table_id = aws_route_table.vpc_route_table.id
+}
 
 
 # 5. Security Group: SSH + Puertos de Airflow

@@ -8,11 +8,45 @@ resource "aws_vpc" "lan-vpc" {
   }
 }
 
-output "vpc_id" {
-  description = "El ID de la VPC creada."
-  value       = aws_vpc.lan-vpc .id # Asume que tu recurso VPC se llama 'aws_vpc.main'
+
+# 3. Crear una Internet Gateway
+resource "aws_internet_gateway" "hadoop_igw" {
+  vpc_id = aws_vpc.lan-vpc.id  
+
+  tags = {
+    Name = "Hadoop-IGW"
+  }
 }
 
+# 4. Crear una tabla de ruteo para salida a internet
+resource "aws_route_table" "hadoop_route_table" {
+  vpc_id = aws_vpc.lan-vpc.id  
+
+  route {
+    cidr_block = "0.0.0.0/0"
+    gateway_id = aws_internet_gateway.hadoop_igw.id
+  }
+
+  tags = {
+    Name = "Hadoop-Route-Table"
+  }
+}
+
+# 5. Asociar la tabla de ruteo con la subnet
+resource "aws_route_table_association" "hadoop_rta" {
+  subnet_id      = aws_subnet.hadoop_subnet.id
+  route_table_id = aws_route_table.hadoop_route_table.id
+}
+
+
+output "vpc_id" {
+  description = "El ID de la VPC creada."
+  value       = aws_vpc.lan-vpc.id # Asume que tu recurso VPC se llama 'aws_vpc.main'
+}
+
+data "aws_eip" "ipairlow" {
+  id = "eipalloc-0f78a92ea0ba06992" # ¡REEMPLAZA CON EL ID DE TU EIP EXISTENTE!
+}
 
 # 2. Subnet pública
 resource "aws_subnet" "airflow_subnet" {
@@ -26,33 +60,8 @@ resource "aws_subnet" "airflow_subnet" {
   }
 }
 
-# 3. Internet Gateway
-resource "aws_internet_gateway" "airflow_igw" {
-  vpc_id = aws_vpc.lan-vpc.id  # Correcto
 
-  tags = {
-    Name = "airflow-igw"
-  }
-}
 
-# 4. Tabla de rutas
-resource "aws_route_table" "airflow_rt" {
-  vpc_id = aws_vpc.lan-vpc.id  # ¡CORREGIDO! Debe ser airflow_vpc.id
-
-  route {
-    cidr_block = "0.0.0.0/0"
-    gateway_id = aws_internet_gateway.airflow_igw.id
-  }
-
-  tags = {
-    Name = "airflow-rt"
-  }
-}
-
-resource "aws_route_table_association" "airflow_rt_assoc" {
-  subnet_id      = aws_subnet.airflow_subnet.id
-  route_table_id = aws_route_table.airflow_rt.id
-}
 
 # 5. Security Group: SSH + Puertos de Airflow
 resource "aws_security_group" "airflow_sg" {
@@ -102,7 +111,7 @@ resource "aws_instance" "airflow_instance" {
   instance_type          = "t2.large"
   subnet_id              = aws_subnet.airflow_subnet.id
   vpc_security_group_ids = [aws_security_group.airflow_sg.id]
-  key_name               = "WEB"
+  key_name                = "hadoop" 
   user_data = file("scripts/init-docker-airflow.sh")
 
   associate_public_ip_address = true
@@ -114,17 +123,9 @@ resource "aws_instance" "airflow_instance" {
 }
 
 # Recurso para la IP Elástica
-resource "aws_eip" "airflow_elastic_ip" {
-  instance = aws_instance.airflow_instance.id
 
-  tags = {
-    Name        = "AirflowPublicIP"
-    Environment = "Development"
-  }
-}
 
-# Salida para ver la IP pública asignada
-output "airflow_public_ip_address" {
-  description = "La dirección IP elástica asignada para la instancia de Airflow."
-  value       = aws_eip.airflow_elastic_ip.public_ip
+resource "aws_eip_association" "web_instance_association_airflow" {
+  instance_id   = aws_instance.airflow_instance.id # ID de tu instancia EC2
+  allocation_id = data.aws_eip.ipairlow.id # O data.aws_eip.existing_eip_by_id.id
 }

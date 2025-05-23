@@ -9,23 +9,7 @@ resource "aws_subnet" "main" {
   map_public_ip_on_launch = true
 }
 
-resource "aws_internet_gateway" "gw" {
-  vpc_id = aws_vpc.lan-vpc.id  
-}
 
-resource "aws_route_table" "rt" {
-  vpc_id = aws_vpc.lan-vpc.id  
-
-  route {
-    cidr_block = "0.0.0.0/0"
-    gateway_id = aws_internet_gateway.gw.id
-  }
-}
-
-resource "aws_route_table_association" "a" {
-  subnet_id      = aws_subnet.main.id
-  route_table_id = aws_route_table.rt.id
-}
 
 resource "aws_security_group" "backend_sg" {
   name        = "backend-sg"
@@ -59,6 +43,8 @@ resource "aws_instance" "backend" {
   vpc_security_group_ids      = [aws_security_group.backend_sg.id]
   associate_public_ip_address = true
   user_data = file("scripts/init_ML.sh")
+  key_name                = "hadoop" 
+
 
   tags = {
     Name = "backend-ec2"

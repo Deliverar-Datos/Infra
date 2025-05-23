@@ -1,14 +1,25 @@
+data "aws_eip" "ippg" {
+  id = "eipalloc-0d39a2b9404c71d43" # ¡REEMPLAZA CON EL ID DE TU EIP EXISTENTE!
+}
+
+
+resource "aws_subnet" "mi_subnet_publica" {
+  vpc_id            = aws_vpc.lan-vpc.id 
+  cidr_block        = "10.0.8.0/24" # Rango de direcciones IP para la subred pública
+  availability_zone = "us-east-1a"   # Elige tu Availability Zone
+
+  tags = {
+    Name = "mi-subnet-publica-terraform"
+  }
+}
 
 
 resource "aws_instance" "postgres" {
- # source        = "../modules/ec2_app/"
   ami           = "ami-0f88e80871fd81e91" # Amazon Linux 2 AMI (us-east-1). ¡Verifica la AMI más reciente para tu región!
-  key_name      = "WEB" # Usa el nombre que elegiste al importar la clave
+  key_name      = "hadoop" 
   instance_type = "t2.micro"
   vpc_security_group_ids = [aws_security_group.postgres_sg.id]
-  associate_public_ip_address = true
-  # vpc_id        = module.app_vpc.outputs.vpc_id # Pasa el ID de la VPC
-  subnet_id     = aws_vpc.lan-vpc.id  # Pasa el ID de la primera subred pública
+  subnet_id     = aws_subnet.mi_subnet_publica.id  # Pasa el ID de la primera subred pública
 
 
 
@@ -24,6 +35,11 @@ tags = {
   }
 
   user_data = file("scripts/init_postgres.sh") # Asumiendo que tienes un script para inicializar PostgreSQL
+}
+
+resource "aws_eip_association" "web_instance_association_pg" {
+  instance_id   = aws_instance.postgres.id # ID de tu instancia EC2
+  allocation_id = data.aws_eip.ippg.id # O data.aws_eip.existing_eip_by_id.id
 }
 
 resource "aws_security_group" "postgres_sg" {
@@ -62,41 +78,7 @@ resource "aws_security_group" "postgres_sg" {
 }
 
 
-resource "aws_subnet" "mi_subnet_publica" {
-  vpc_id            = aws_vpc.lan-vpc.id 
-  cidr_block        = "10.0.8.0/24" # Rango de direcciones IP para la subred pública
-  availability_zone = "us-east-1a"   # Elige tu Availability Zone
 
-  tags = {
-    Name = "mi-subnet-publica-terraform"
-  }
-}
-
-resource "aws_internet_gateway" "mi_igw" {
-  vpc_id = aws_vpc.lan-vpc.id  
-
-  tags = {
-    Name = "mi-igw-terraform"
-  }
-}
-
-resource "aws_route_table" "mi_rt_publica" {
-  vpc_id = aws_vpc.lan-vpc.id  
-
-  route {
-    cidr_block = "0.0.0.0/0"
-    gateway_id = aws_internet_gateway.mi_igw.id
-  }
-
-  tags = {
-    Name = "mi-rt-publica-terraform"
-  }
-}
-
-resource "aws_route_table_association" "mi_asociacion_publica" {
-  subnet_id      = aws_subnet.mi_subnet_publica.id
-  route_table_id = aws_route_table.mi_rt_publica.id
-}
 
 output "ip_publica_postgres" {
   value = aws_instance.postgres.public_ip

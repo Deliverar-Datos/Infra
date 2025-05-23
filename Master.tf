@@ -2,23 +2,20 @@ provider "aws" {
   region = "us-east-1"  # Cambiá si estás en otra región
 }
 
-# # 1. Crear la VPC
-# resource "aws_vpc" "hadoop_vpc" {
-#   cidr_block           = "10.0.0.0/16"
-#   enable_dns_support   = false
-#   enable_dns_hostnames = false
 
-#   tags = {
-#     Name = "Hadoop-VPC"
-#   }
-# }
+data "aws_eip" "ipmaster" {
+  id = "eipalloc-0469858303b8a3082" # ¡REEMPLAZA CON EL ID DE TU EIP EXISTENTE!
+}
 
 
-
+resource "aws_eip_association" "web_instance_association_master" {
+  instance_id   = aws_instance.hadoop_master.id # ID de tu instancia EC2
+  allocation_id = data.aws_eip.ipmaster.id # O data.aws_eip.existing_eip_by_id.id
+}
 # 2. Crear una Subnet /24
 resource "aws_subnet" "hadoop_subnet" {
   vpc_id                  = aws_vpc.lan-vpc.id  
-  cidr_block              = "10.0.10.0/24"
+  cidr_block              = "10.0.1.0/24"
   map_public_ip_on_launch = false
   availability_zone       = "us-east-1a" # O cambialo según tu zona
 
@@ -27,34 +24,6 @@ resource "aws_subnet" "hadoop_subnet" {
   }
 }
 
-# 3. Crear una Internet Gateway
-resource "aws_internet_gateway" "hadoop_igw" {
-  vpc_id = aws_vpc.lan-vpc.id  
-
-  tags = {
-    Name = "Hadoop-IGW"
-  }
-}
-
-# 4. Crear una tabla de ruteo para salida a internet
-resource "aws_route_table" "hadoop_route_table" {
-  vpc_id = aws_vpc.lan-vpc.id  
-
-  route {
-    cidr_block = "0.0.0.0/0"
-    gateway_id = aws_internet_gateway.hadoop_igw.id
-  }
-
-  tags = {
-    Name = "Hadoop-Route-Table"
-  }
-}
-
-# 5. Asociar la tabla de ruteo con la subnet
-resource "aws_route_table_association" "hadoop_rta" {
-  subnet_id      = aws_subnet.hadoop_subnet.id
-  route_table_id = aws_route_table.hadoop_route_table.id
-}
 
 # 6. Crear un Security Group que permita SSH y tráfico interno
 resource "aws_security_group" "hadoop_sg" {
@@ -104,7 +73,9 @@ resource "aws_instance" "hadoop_master" {
   private_ip                  = "10.0.1.254"
   user_data = file("scripts/init_hadoop.sh") # Asumiendo que tienes un script para inicializar PostgreSQL
 
-  
+   tags = {
+    Name = "Master-Node"
+  }
 }
 
 
@@ -116,7 +87,7 @@ resource "aws_instance" "hadoop_node" {
   subnet_id                   = aws_subnet.hadoop_subnet.id
   vpc_security_group_ids      = [aws_security_group.hadoop_sg.id]
   associate_public_ip_address = false
-  key_name                    = "hadoop" # ⚠️ Cambiar por tu key pair existente
+  key_name                    = "hadoop" 
   private_ip                  = "10.0.1.${count.index + 100}"
   
 
